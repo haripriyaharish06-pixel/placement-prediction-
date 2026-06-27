@@ -1,0 +1,68 @@
+body{
+    background:#f2f2f2;
+    font-family:Arial;
+}
+
+.container{
+    width:400px;
+    margin:auto;
+    margin-top:40px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+h2{
+    text-align:center;
+} 
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Grid Setup */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+    gap: 15px; /* Adds clean spacing between your form fields */
+}
+
+/* If you have a heading inside the container, make it span both columns */
+.container h2, .container h1 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling the inputs to look modern */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    position: relative;
+    z-index: 10;
+    cursor: pointer; /* Makes the mouse turn into a hand icon when hovering */
+}
+button {
+    grid-column: span 2; /* Forces the button to take up its own clean row at the bottom */
+    cursor: pointer;
+}

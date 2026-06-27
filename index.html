@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Placement Prediction</h1>
+    
+    <!-- We wrapped the fields inside a form container and stopped the default refresh behavior -->
+    <form id="predictionForm" onsubmit="event.preventDefault(); predict();">
+        <input type="text" id="gender" placeholder="Gender (M/F)" required>
+        <input type="number" id="ssc_p" placeholder="SSC Percentage" step="0.01" required>
+        <input type="text" id="hsc_s" placeholder="HSC Stream" required>
+        <input type="number" id="hsc_p" placeholder="HSC Percentage" step="0.01" required>
+        <input type="text" id="degree_t" placeholder="Degree Type" required>
+        <input type="number" id="degree_p" placeholder="Degree Percentage" step="0.01" required>
+        <input type="number" id="etest_p" placeholder="E-test Percentage" step="0.01" required>
+        
+        <!-- Changed to type="submit" so pressing enter or clicking works natively -->
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2 id="result"></h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
